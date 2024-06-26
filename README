@@ -1,4 +1,4 @@
-Animal Image Classification
+Neural Image Classification
 
 This repository contains a simple animal image classification example using TensorFlow and Keras. The code snippets demonstrate how to:
 
@@ -57,3 +57,6 @@ To run the code, simply execute the Python scripts in the following order:
 3.  preprocess and classify the captured image
 
 -NOTE: use a larger and more diverse dataset to improve the model's accuracy.
+
+
+Detail explanation: https://medium.com/@omarjbt/designing-a-custom-neural-network-model-for-image-classification-using-your-own-images-as-the-089d36b13658
