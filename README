@@ -1,0 +1,59 @@
+Animal Image Classification
+
+This repository contains a simple animal image classification example using TensorFlow and Keras. The code snippets demonstrate how to:
+
+- Load and preprocess images
+- Define a neural network model
+- Compile and train the model
+- Evaluate the model's performance
+- Make predictions
+- Capture an image from a laptop camera
+- Preprocess and classify a new image
+
+Model
+
+The neural network model is defined in (link unavailable) and consists of several layers:
+
+- Conv2D (32 filters, kernel size 3x3, activation='relu')
+- MaxPooling2D (pool size 2x2)
+- Conv2D (64 filters, kernel size 3x3, activation='relu')
+- MaxPooling2D (pool size 2x2)
+- Conv2D (128 filters, kernel size 3x3, activation='relu')
+- MaxPooling2D (pool size 2x2)
+- Flatten
+- Dense (128 units, activation='relu')
+- Dropout (0.5)
+- Dense (3 units, activation='softmax')
+
+The model is compiled with the Adam optimizer and categorical cross-entropy loss function.
+
+Training
+
+The model is trained on the training set using the fit method. The training process is repeated for 10 epochs with a validation split of 0.2.
+
+Evaluation
+
+The model's performance is evaluated on the validation set using the evaluate method. The loss and accuracy are printed to the console.
+
+Prediction
+
+The model makes predictions on a new image captured from the laptop camera using the predict method. The predicted label is printed to the console.
+
+Requirements
+
+- TensorFlow 2.x
+- Keras 2.x
+- NumPy
+- SciPy
+- Pillow
+- OpenCV
+
+Usage
+
+To run the code, simply execute the Python scripts in the following order:
+
+1.  train the model
+2.  capture an image from the laptop camera
+3.  preprocess and classify the captured image
+
+-NOTE: use a larger and more diverse dataset to improve the model's accuracy.
