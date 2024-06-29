@@ -19,10 +19,16 @@ image_list = [
     'data/dog1.jpeg',
     'data/dog2.jpg',
     'data/dog3.jpeg',
+    'data/cock6.jpeg',
+    'data/cock5.jpg',
+    'data/cock4.jpeg',
+    'data/cat6.jpg',
+    'data/cat5.jpg',
+    'data/cat4.jpeg',
 ]
 
 
-labels = ['dog', 'dog', 'dog', 'cat', 'cat', 'cat', 'cock', 'cock', 'cock', 'dog', 'dog', 'dog']
+labels = ['dog', 'dog', 'dog', 'cat', 'cat', 'cat', 'cock', 'cock', 'cock', 'dog', 'dog', 'dog', 'cock', 'cock', 'cock', 'cat', 'cat', 'cat']
 label_map = {'cat': 0, 'cock': 1, 'dog': 2}
 
 # Load and preprocess images
@@ -43,18 +49,15 @@ X_train, X_val, y_train, y_val = train_test_split(images, labels, test_size=0.2,
 
 # Define the neural network model
 model = Sequential([
-    Conv2D(32, (3, 3), activation='relu', input_shape=(128, 128, 3)),
+    Conv2D(16, (3, 3), activation='relu', input_shape=(128, 128, 3)),
     MaxPooling2D((2, 2)),
-    Conv2D(64, (3, 3), activation='relu'),
-    MaxPooling2D((2, 2)),
-    Conv2D(128, (3, 3), activation='relu'),
+    Conv2D(32, (3, 3), activation='relu'),
     MaxPooling2D((2, 2)),
     Flatten(),
-    Dense(128, activation='relu'),
+    Dense(64, activation='relu'),
     Dropout(0.5),
     Dense(3, activation='softmax')
 ])
-
 model.summary()
 
 # Compile and train the model

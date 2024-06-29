@@ -12,16 +12,14 @@ This repository contains a simple animal image classification example using Tens
 
 Model
 
-The neural network model is defined in (link unavailable) and consists of several layers:
+The neural network model is defined below and consists of several layers:
 
+- Conv2D (16 filters, kernel size 3x3, activation='relu')
+- MaxPooling2D (pool size 2x2)
 - Conv2D (32 filters, kernel size 3x3, activation='relu')
 - MaxPooling2D (pool size 2x2)
-- Conv2D (64 filters, kernel size 3x3, activation='relu')
-- MaxPooling2D (pool size 2x2)
-- Conv2D (128 filters, kernel size 3x3, activation='relu')
-- MaxPooling2D (pool size 2x2)
 - Flatten
-- Dense (128 units, activation='relu')
+- Dense (64 units, activation='relu')
 - Dropout (0.5)
 - Dense (3 units, activation='softmax')
 
