@@ -56,5 +56,9 @@ To run the code, simply execute the Python scripts in the following order:
 
 -NOTE: use a larger and more diverse dataset to improve the model's accuracy.
 
+# Some parts of the codebase are adapted from "https://www.tensorflow.org/guide/keras/sequential_model", 
+"https://pyimagesearch.com/2018/12/31/keras-conv2d-and-convolutional-layers/",
+"https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html"
+
 
 Detail explanation: https://medium.com/@omarjbt/designing-a-custom-neural-network-model-for-image-classification-using-your-own-images-as-the-089d36b13658
